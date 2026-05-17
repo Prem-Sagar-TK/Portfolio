@@ -119,7 +119,7 @@ DB_NAME=portfolio
 CORS_ORIGINS=http://localhost:5173
 ```
 
-> **Note:** Never commit the `.env` file. It is listed in `.gitignore`.
+> **Note:** Don't commit the `.env` file. It is listed in `.gitignore`.
 
 ---
 
@@ -132,21 +132,3 @@ CORS_ORIGINS=http://localhost:5173
 | `GET` | `/api/contact` | List all contact messages |
 | `POST` | `/api/status` | Create a status check entry |
 | `GET` | `/api/status` | Retrieve all status checks |
-
----
-
-## 📬 Contact
-
-| Field | Detail |
-|---|---|
-| Name | Prem Sagar T.K |
-| Email | premsagar.tk@iiitdwd.ac.in |
-| LinkedIn | [linkedin.com/in/prem-sagar-tk](https://www.linkedin.com/in/prem-sagar-tk) |
-| GitHub | [github.com/premsagartk](https://github.com/premsagartk) |
-| Location | Nandyal, Andhra Pradesh, India |
-
----
-
-## 📄 License
-
-This project is for personal portfolio use. Feel free to use it as inspiration for your own.

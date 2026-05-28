@@ -1,6 +1,6 @@
 # 🚀 Prem Sagar T.K — Portfolio
 
-A full-stack personal portfolio website showcasing projects, skills, leadership roles, and a working contact form. Built with a React + Vite frontend and a FastAPI + MongoDB backend.
+A sleek, serverless personal portfolio website showcasing projects, skills, leadership roles, and a contact form. Built with React, Vite, Tailwind CSS, and Framer Motion, and optimized for instant deployment to Vercel, Netlify, or GitHub Pages.
 
 ---
 
@@ -11,7 +11,7 @@ This portfolio highlights:
 - **Skills** — Programming languages, frameworks, AI/ML tools, and soft skills
 - **Projects** — Featured work including JnanaSetu, LZW Compression, Ship Routing, and LIME Research
 - **Leadership** — Roles across student organizations and events
-- **Contact** — A live contact form that stores messages in MongoDB
+- **Contact** — A serverless contact form that connects directly to your email client
 
 ---
 
@@ -19,116 +19,63 @@ This portfolio highlights:
 
 ```
 Portfolio/
-├── frontend/          # React + Vite application
-│   ├── src/
-│   │   ├── component/ # UI components (Hero, Skills, Projects, Contact, etc.)
-│   │   ├── lib/       # Shared data (data.js)
-│   │   └── ...
-│   ├── index.html
-│   ├── package.json
-│   ├── tailwind.config.js
-│   └── vite.config.js
-│
-└── backend/           # Python FastAPI application
-    ├── server.py      # API routes and MongoDB logic
-    ├── requirements.txt
-    └── .env           # Environment variables (not committed)
+├── src/               # React application code
+│   ├── assets/        # Media assets (Avatar, logo)
+│   ├── component/     # UI components (Hero, Skills, Projects, Contact, etc.)
+│   ├── lib/           # Shared data (data.js)
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+├── public/            # Static assets (Favicon)
+├── index.html
+├── package.json
+├── tailwind.config.js
+└── vite.config.js
 ```
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Frontend
 | Technology | Purpose |
 |---|---|
 | React 18 | UI framework |
 | Vite 6 | Build tool & dev server |
 | Tailwind CSS 3 | Utility-first styling |
-| Framer Motion | Animations |
-| Lucide React | Icon library |
+| Framer Motion | Smooth hover and loading animations |
+| Lucide React | Clean vector icons |
 | React Router DOM | Client-side routing |
-| Axios | HTTP client |
 | Sonner | Toast notifications |
-
-### Backend
-| Technology | Purpose |
-|---|---|
-| FastAPI | REST API framework |
-| MongoDB (Motor) | Async database driver |
-| Pydantic v2 | Data validation |
-| Python-dotenv | Environment config |
-| Uvicorn | ASGI server |
-| Starlette | CORS middleware |
 
 ---
 
 ## ⚙️ Getting Started
 
-### Prerequisites
-- Node.js ≥ 18
-- Python ≥ 3.10
-- MongoDB instance (local or Atlas)
+### 🖥️ Local Development
+
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+   The site will be running at `http://localhost:3000`.
+
+3. **Build for production:**
+   ```bash
+   npm run build
+   ```
+   This generates the static, optimized bundle in the `/dist` directory.
 
 ---
 
-### 🖥️ Frontend Setup
+## 🚀 Deployment to Vercel
 
-```bash
-cd frontend
-npm install        # or: yarn install
-npm run dev        # starts dev server at http://localhost:5173
-```
-
-**Build for production:**
-```bash
-npm run build
-npm run preview    # preview the production build locally
-```
-
----
-
-### 🐍 Backend Setup
-
-```bash
-cd backend
-
-# Create and activate a virtual environment
-python -m venv venv
-venv\Scripts\activate       # Windows
-# source venv/bin/activate  # macOS / Linux
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Start the server
-uvicorn server:app --reload --port 8000
-```
-
-The API will be available at `http://localhost:8000`.
-
----
-
-### 🔐 Environment Variables
-
-Create a `.env` file inside the `backend/` directory:
-
-```env
-MONGO_URL=mongodb://localhost:27017
-DB_NAME=portfolio
-CORS_ORIGINS=http://localhost:5173
-```
-
-> **Note:** Don't commit the `.env` file. It is listed in `.gitignore`.
-
----
-
-## 📡 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `GET` | `/api/` | Health check |
-| `POST` | `/api/contact` | Submit a contact message |
-| `GET` | `/api/contact` | List all contact messages |
-| `POST` | `/api/status` | Create a status check entry |
-| `GET` | `/api/status` | Retrieve all status checks |
+Since the project structure has been flattened, you can deploy to Vercel with zero configuration:
+1. Push your changes to your Git repository.
+2. Import the repository in Vercel.
+3. Vercel will automatically detect **Vite** as the framework and build/deploy your portfolio successfully from the root directory!

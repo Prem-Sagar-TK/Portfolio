@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS, PROFILE } from "../lib/data";
+import avatarUrl from "@/assets/avatar.png";
 
 export const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -29,10 +30,19 @@ export const Navbar = () => {
                 <div className="flex items-center justify-between h-16">
                     <a
                         href="#hero"
-                        className="font-display text-base font-semibold tracking-tight text-white"
+                        className="flex items-center gap-2.5 font-display text-base font-semibold tracking-tight text-white group"
                         data-testid="nav-logo"
                     >
-                        Prem Sagar<span className="text-white/60"> TK 😉</span>
+                        <div className="relative w-8 h-8 rounded-full overflow-hidden border border-white/20 group-hover:border-white/50 transition-colors duration-300">
+                            <img
+                                src={avatarUrl}
+                                alt="Prem Sagar T.K"
+                                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            />
+                        </div>
+                        <span>
+                            Prem Sagar<span className="text-white/60"> TK</span>
+                        </span>
                     </a>
 
                     <nav className="hidden md:flex items-center gap-8">

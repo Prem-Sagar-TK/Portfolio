@@ -1,13 +1,8 @@
 import { useState } from "react";
-import axios from "axios";
 import { toast } from "sonner";
 import { ArrowUpRight, GitBranch, Briefcase, Mail, Send } from "lucide-react";
 import { Reveal, SectionHeader } from "./Reveal";
 import { PROFILE } from "../lib/data";
-
-const API = import.meta.env.VITE_BACKEND_URL
-    ? `${import.meta.env.VITE_BACKEND_URL}/api`
-    : "/api";
 
 export const Contact = () => {
     const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -16,7 +11,7 @@ export const Contact = () => {
     const onChange = (e) =>
         setForm((f) => ({ ...f, [e.target.name]: e.target.value }));
 
-    const onSubmit = async (e) => {
+    const onSubmit = (e) => {
         e.preventDefault();
         if (!form.name || !form.email || !form.message) {
             toast.error("Please fill in all fields.");
@@ -24,11 +19,13 @@ export const Contact = () => {
         }
         setSubmitting(true);
         try {
-            await axios.post(`${API}/contact`, form);
-            toast.success("Message sent. I'll get back to you soon.");
+            const subject = encodeURIComponent(`Portfolio Contact from ${form.name}`);
+            const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+            window.location.href = `mailto:${PROFILE.email}?subject=${subject}&body=${body}`;
+            toast.success("Opening your email client…");
             setForm({ name: "", email: "", message: "" });
         } catch (err) {
-            toast.error("Could not send message. Try email instead.");
+            toast.error("Could not open email client. Please email me directly.");
         } finally {
             setSubmitting(false);
         }

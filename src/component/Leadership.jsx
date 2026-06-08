@@ -34,7 +34,7 @@ export const Leadership = () => {
                                         data-testid={`leadership-item-${i}`}
                                     >
                                         <span className="absolute -left-[2px] top-7 h-px w-4 bg-white/30 group-hover:bg-white group-hover:w-6 transition-all" />
-                                        <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-2">
+                                        <div className="grid grid-cols-1 sm:grid-cols-[2fr_1.2fr_0.8fr] sm:items-center gap-2">
                                             <div>
                                                 <div className="text-base sm:text-lg text-white font-medium">
                                                     {item.role}
@@ -43,8 +43,11 @@ export const Leadership = () => {
                                                     {item.org}
                                                 </div>
                                             </div>
-                                            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 shrink-0">
+                                            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 sm:text-center">
                                                 {item.type}
+                                            </div>
+                                            <div className="font-mono text-[10px] uppercase tracking-[0.2em] text-white/40 sm:text-right">
+                                                {item.time}
                                             </div>
                                         </div>
                                     </li>

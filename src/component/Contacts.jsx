@@ -40,13 +40,13 @@ export const Contact = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionHeader
                     index="06"
-                    kicker="Contact"
-                    title="Let's build, research, or just have a conversation."
+                    kicker="Connect"
+                    title="Let's Connect"
                     description="Open to internships, research collaborations, and interesting problems."
                 />
 
                 <div className="grid grid-cols-12 gap-y-12 gap-x-8">
-                    {/* Form */}
+                    {/* Form 
                     <div className="col-span-12 lg:col-span-7">
                         <Reveal>
                             <form
@@ -114,7 +114,7 @@ export const Contact = () => {
                                 </button>
                             </form>
                         </Reveal>
-                    </div>
+                    </div>*/}
 
                     {/* Direct links */}
                     <div className="col-span-12 lg:col-span-5 flex flex-col gap-3">

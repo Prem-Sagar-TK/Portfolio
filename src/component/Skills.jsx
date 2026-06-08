@@ -63,16 +63,14 @@ const SkillCard = ({ group, idx }) => {
                         </span>
 
                         <div>
-                            <p className="font-mono text-[10px] uppercase tracking-[0.25em] text-white/40 leading-none mb-0.5">
-                                {String(idx + 1).padStart(2, "0")}
-                            </p>
+
                             <p className="font-display text-sm font-semibold text-white leading-none">
                                 {group.category}
                             </p>
                         </div>
                     </div>
 
-                    {/* Item count badge */}
+                    {/* Item count badge 
                     <span
                         className="font-mono text-[10px] px-2 py-0.5 rounded-full"
                         style={{
@@ -82,7 +80,7 @@ const SkillCard = ({ group, idx }) => {
                         }}
                     >
                         {group.items.length}
-                    </span>
+                    </span>*/}
                 </div>
 
                 {/* Accent divider */}

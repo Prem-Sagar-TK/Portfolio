@@ -56,13 +56,7 @@ export const Navbar = () => {
                                 {l.label}
                             </a>
                         ))}
-                        {/*<a
-                            href={`mailto:${PROFILE.email}`}
-                            className="text-xs font-mono uppercase tracking-wider px-4 py-2 border border-white/20 text-white hover:bg-white hover:text-black transition-colors"
-                            data-testid="nav-cta-email"
-                        >
-                            Get in touch
-                        </a>*/}
+
                     </nav>
 
                     <button

@@ -28,7 +28,7 @@ export const About = () => {
                         </Reveal>
                         <Reveal delay={0.1}>
                             <p className="mt-6 text-base text-white/60 leading-relaxed max-w-xl">
-                                I&apos;m a student at IIIT Dharwad with a practical curiosity for intelligent systems, full-stack engineering, and startup eco systems. My work moves between research-style explorations and building things end-to-end. I enjoy sitting close to the data, the algorithm, and the user at the same time. At IIIT Dharwad, I serve as the Cultural Secretary, the President of Iridescence, and the Vice President of DSAI (Data Science and Artificial Intelligence) Society. Beyond my technical focus, I am an athlete who represented the institute in Inter-IIIT Basketball and played a key role in organizing large-scale campus events. I am passionate about blending technology, leadership, and innovation to create meaningful impact.
+                                My work moves between research-style explorations and building things end-to-end. I enjoy sitting close to the data, the algorithm, and the user at the same time. At IIIT Dharwad, I served as the Cultural Secretary, the President of Iridescence, and the Vice President of DSAI (Data Science and Artificial Intelligence) Society. Beyond my technical focus, I am an athlete who represented the institute in Inter-IIIT Basketball and played a key role in organizing large-scale campus events. I am passionate about blending technology, leadership, and innovation to create meaningful impact.
                             </p>
                         </Reveal>
                     </div>

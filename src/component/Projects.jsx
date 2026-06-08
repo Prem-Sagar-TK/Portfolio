@@ -83,9 +83,9 @@ export const Projects = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <SectionHeader
                     index="04"
-                    kicker="Selected Work"
+                    kicker="My Works"
                     title="Projects that mix research curiosity with engineering practice."
-                    description="A small, honest selection — algorithms, full-stack systems, and explainable AI."
+
                 />
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">

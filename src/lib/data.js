@@ -21,7 +21,7 @@ export const ABOUT_INTERESTS = [
 export const SKILLS = [
   {
     category: "Programming",
-    items: ["Python", "C", "C++", "Java", "JavaScript", "TypeScript"],
+    items: ["Python", "C", "C++", "Java", "CSS", "HTML", "JavaScript", "TypeScript"],
   },
   {
     category: "Technologies & Tools",
@@ -29,100 +29,128 @@ export const SKILLS = [
   },
   {
     category: "AI/ML & Data",
-    items: ["Machine Learning", "Data Analytics", "Tableau", "Explainable AI"],
+    items: ["Machine Learning", "Data Analytics", "Explainable AI"],
   },
   {
     category: "Soft Skills",
-    items: ["Leadership", "Team Player", "Public Speaking", "Negotiation",],
+    items: ["Leadership", "Team Player", "Public Speaking", "Strategic Thinking"],
   },
 ];
 
 export const PROJECTS = [
+
 
   {
     id: "jnanasetu",
     index: "01",
     title: "JnanaSetu",
     description:
-      "Full-stack platform with a structured frontend, backend, authentication and AI-powered services. Containerized for consistent development and deployment.",
+      "Built a full-stack AI-enabled educational platform designed to streamline learning and knowledge sharing. The system incorporates authentication, backend APIs, AI-driven services, and containerized deployment, enabling secure access, intelligent assistance, and scalable application management.",
     stack: ["TypeScript", "Node.js", "Python", "Docker", "Prisma"],
-    github: "#",
+    github: "https://github.com/Prem-Sagar-TK/JnanaSetu",
     demo: "#",
     image:
-      "https://images.unsplash.com/photo-1640346876473-f76a73c71539?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-2",
   },
   {
-    id: "lzw",
+    id: "dns-resolver",
     index: "02",
-    title: "LZW Compression in Java",
+    title: "DNS Resolver",
     description:
-      "Implementation of the Lempel-Ziv-Welch algorithm for file compression and decompression, focused on correctness and clean object-oriented design.",
-    stack: ["Java", "Algorithms", "I/O"],
-    github: "#",
+      "Implemented a custom DNS resolver to explore the fundamentals of internet communication and domain name resolution. The project handles DNS queries, processes responses from DNS servers, and demonstrates how human-readable domain names are translated into IP addresses.",
+    stack: ["Python", "Networking", "DNS", "Sockets"],
+    github: "https://github.com/Prem-Sagar-TK/DNS-Resolver",
     demo: "#",
     image:
-      "https://images.unsplash.com/photo-1679931974865-4a2bb1a2d13d?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+      "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-1",
   },
   {
-    id: "ship-routing",
+    id: "chat-bot",
     index: "03",
-    title: "Advanced Ship Routing System",
+    title: "AI Chat Bot",
     description:
-      "Maritime route optimization built around A* and Dijkstra algorithms, factoring in ocean and weather-related parameters to compute efficient shipping paths.",
-    stack: ["Python", "A*", "Dijkstra", "Geospatial Data"],
-    github: "#",
+      "Developed an AI-powered chatbot capable of handling natural language conversations and user queries in real time. The system integrates backend services for request processing, response generation, and conversation management, providing an interactive and scalable virtual assistant experience.",
+    stack: ["Python", "AI", "NLP", "Backend"],
+    github: "https://github.com/Prem-Sagar-TK/Chat-Bot",
     demo: "#",
     image:
-      "https://images.unsplash.com/photo-1641084057528-4e554c519deb?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-1",
   },
   {
-    id: "Lime",
+    id: "intellora",
     index: "04",
-    title: "LIME Research Replication",
+    title: "Intellora",
     description:
-      "Replication and study of the LIME framework for Explainable AI — interpreting classifier predictions through local surrogate models.",
-    stack: ["Python", "Explainable AI", "Research"],
-    github: "#",
+      "Designed and developed an intelligent analytics platform that leverages AI and machine learning techniques to transform raw data into actionable insights. The project focuses on data processing, predictive analysis, and user-friendly visualization to support informed decision-making.",
+    stack: ["Python", "Machine Learning", "AI", "Data Analytics"],
+    github: "https://github.com/Prem-Sagar-TK/Intellora",
     demo: "#",
     image:
-      "https://images.unsplash.com/photo-1650104243359-479094498a71?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+      "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
     span: "lg:col-span-2",
   },
+
+  {
+    id: "mini-ospf",
+    index: "05",
+    title: "Mini OSPF Routing Protocol",
+    description:
+      "Developed a simplified implementation of the OSPF routing protocol to simulate dynamic route discovery and shortest-path computation in computer networks. The project models link-state advertisements, network topology updates, and efficient route selection using graph-based algorithms.",
+    stack: ["Python", "Computer Networks", "OSPF", "Graph Algorithms"],
+    github: "https://github.com/Prem-Sagar-TK/Mini-OSPF-Routing-Protocol",
+    demo: "#",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?crop=entropy&cs=srgb&fm=jpg&q=85&w=1200",
+    span: "lg:col-span-2",
+  },
+
 ];
 
 export const LEADERSHIP = [
   {
-    role: "Acting President",
+    role: "Cultural Secretary",
+    org: "IIIT Dharwad",
+    type: "Leadership",
+    time: "2025-2026"
+  },
+  {
+    role: "President",
     org: "Iridescence",
     type: "Leadership",
+    time: "2025-2026"
   },
   {
     role: "Vice President",
     org: "DSAI Society",
     type: "Leadership",
+    time: "2025-2026"
   },
   {
-    role: "Documentation Coordinator",
+    role: "Program Director",
+    org: "Hack2Future 2.0",
+    type: "Leadership",
+    time: "2025-2026"
+  },
+  {
+    role: "Student Coordinator",
     org: "CGC",
     type: "Coordination",
+    time: "2024-2026"
   },
   {
-    role: "Event / Sponsorship / Logistics",
-    org: "Hack2Future",
-    type: "Coordination",
-  },
-  {
-    role: "Event / Sponsorship / Logistics",
+    role: "Student Coordinator",
     org: "HR Conclave",
     type: "Coordination",
+    time: "2024"
   },
   {
-    role: "Event / Sponsorship / Logistics",
+    role: "Student Coordinator",
     org: "Sangeeth",
     type: "Coordination",
+    time: "2023"
   },
 ];
 
@@ -130,10 +158,6 @@ export const ACHIEVEMENTS = [
   {
     title: "Inter-IIIT Basketball",
     detail: "Represented IIIT Dharwad at the Inter-IIIT level.",
-  },
-  {
-    title: "5★ Python — HackerRank",
-    detail: "Five-star rating on HackerRank for Python problem solving.",
   },
 ];
 
@@ -150,5 +174,5 @@ export const NAV_LINKS = [
   {
     label: "Leadership", href: "#leadership"
   },
-  { label: "Contact", href: "#contact" },
+  { label: "Connect", href: "#contact" },
 ];

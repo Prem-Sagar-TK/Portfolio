@@ -105,28 +105,8 @@ export const Hero = () => {
                             custom={5}
                             className="mt-10 flex flex-wrap items-center gap-3"
                         >
-                            <a
-                                href="#projects"
-                                className="group inline-flex items-center gap-3 bg-white text-black px-6 py-3.5 font-medium text-sm hover:bg-white/90 transition-colors"
-                                data-testid="hero-view-projects-btn"
-                            >
-                                myProjects
-                                <ArrowDownRight
-                                    className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:translate-y-0.5"
-                                    strokeWidth={1.5}
-                                />
-                            </a>
-                            <a
-                                href="#contact"
-                                className="group inline-flex items-center gap-3 border border-white/20 text-white px-6 py-3.5 font-medium text-sm hover:bg-white/5 hover:border-white/40 transition-colors"
-                                data-testid="hero-contact-btn"
-                            >
-                                Contact
-                                <ArrowDownRight
-                                    className="w-4 h-4 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                                    strokeWidth={1.5}
-                                />
-                            </a>
+
+
                         </motion.div>
                     </div>
 

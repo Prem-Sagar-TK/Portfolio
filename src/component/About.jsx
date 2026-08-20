@@ -22,8 +22,7 @@ export const About = () => {
                             <p className="font-display text-2xl sm:text-3xl font-normal text-white/85 leading-snug tracking-tight">
                                 I&apos;m a student at{" "}
                                 <span className="text-white">IIIT Dharwad</span> with a
-                                practical curiosity for intelligent systems, full-stack
-                                engineering, and startup eco systems.
+                                practical curiosity for intelligent systems, software development, and startup eco systems.
                             </p>
                         </Reveal>
                         <Reveal delay={0.1}>
